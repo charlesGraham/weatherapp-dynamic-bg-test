@@ -59,25 +59,28 @@ function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day} ${date} ${month} ${year}`;
+    return `${day} ${month} ${date} ${year}`;
   };
 
   return (
 
     <div
-      className={ //determine className by checking different weather conditions/types
-        typeof weather.city !== "undefined"
-          ? weather.list[0].weather[0].main === "Clouds"
-            ? "app clouds" 
-              : weather.list[0].weather[0].main === "Rain"
-                ? "app rain"
-                  : weather.list[0].weather[0].main === "Clear"
-                    ? "app sunny"
-                      : "app"
-        : "app"
+      className={"app hank"
+        
+        //determine className by checking different weather conditions/types
+        // typeof weather.city !== "undefined"
+        //   ? weather.list[0].weather[0].main === "Clouds"
+        //     ? "app clouds" 
+        //       : weather.list[0].weather[0].main === "Rain"
+        //         ? "app rain"
+        //           : weather.list[0].weather[0].main === "Clear"
+        //             ? "app sunny"
+        //               : "app"
+        // : "app hank"
       }
     >
       <main>
+
         <div className="search-box">
           <input
             type="text"
@@ -104,6 +107,7 @@ function App() {
             ""
           )}
         </div>
+        
       </main>
     </div>
   );

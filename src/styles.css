@@ -49,6 +49,14 @@ body {
   transition: 0.4 ease-out;
 }
 
+.app.hank {
+  background-image: url('./assets/hank.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.4 ease-out;
+}
+
 
 
 main {

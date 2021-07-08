@@ -3,33 +3,26 @@ import { Carousel } from "react-responsive-carousel";
 
 function Slider(props) {
   let weather = props.weatherData;
-  let date = props.date;
   let city = props.city;
   let country = props.country;
 
-  const temps = [
-    weather.list[0].main.temp,
-    weather.list[1].main.temp,
-    weather.list[2].main.temp,
-    weather.list[3].main.temp,
-    weather.list[4].main.temp
-  ];
+  //loop through weather object and create new array with temperatures pulled
+  //from list.main.temp
+  const temps = weather.list.map(function(weatherTemp) {
+    return weatherTemp.main.temp;
+  });
 
-  const types = [
-    weather.list[0].weather[0].main,
-    weather.list[1].weather[0].main,
-    weather.list[2].weather[0].main,
-    weather.list[3].weather[0].main,
-    weather.list[4].weather[0].main
-  ];
+  //loop through weather object and create new array with weather types pulled
+  //from list.weather[0].main
+  const types = weather.list.map(function(weatherType) {
+    return weatherType.weather[0].main;
+  });
 
-  const times = [
-    weather.list[0].dt_txt,
-    weather.list[1].dt_txt,
-    weather.list[2].dt_txt,
-    weather.list[3].dt_txt,
-    weather.list[4].dt_txt
-  ];
+  //loop through weather object and create new array with weather types pulled
+  //from list.weather[0].main
+  const times = weather.list.map(function(weatherTimes) {
+    return weatherTimes.dt_txt;
+  });
 
 
   return (
@@ -42,7 +35,7 @@ function Slider(props) {
               <div className="location">
                 {city}, {country}
               </div>
-              <div className="date">{date}</div>
+              <div className="date">{times[0]}</div>
             </div>
 
             <div className="weather-box">
