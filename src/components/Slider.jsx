@@ -26,7 +26,7 @@ function Slider(props) {
 
 
   return (
-    <div>
+    <div className="app sunny">
       <Carousel>
         <div>
           {/* slide 1 */}
