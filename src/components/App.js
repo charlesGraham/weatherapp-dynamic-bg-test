@@ -65,18 +65,16 @@ function App() {
   return (
 
     <div
-      className={"app hank"
-        
-        //determine className by checking different weather conditions/types
-        // typeof weather.city !== "undefined"
-        //   ? weather.list[0].weather[0].main === "Clouds"
-        //     ? "app clouds" 
-        //       : weather.list[0].weather[0].main === "Rain"
-        //         ? "app rain"
-        //           : weather.list[0].weather[0].main === "Clear"
-        //             ? "app sunny"
-        //               : "app"
-        // : "app hank"
+      className={
+        typeof weather.city !== "undefined"
+          ? weather.list[0].weather[0].main === "Clouds"
+            ? "app clouds" 
+              : weather.list[0].weather[0].main === "Rain"
+                ? "app rain"
+                  : weather.list[0].weather[0].main === "Clear"
+                    ? "app sunny"
+                      : "app"
+        : "app hank"
       }
     >
       <main>
@@ -93,7 +91,7 @@ function App() {
 
           {/* if the type of city is defined, render the slider */}
           {typeof weather.city !== "undefined" ? (
-            <div className="App">
+            <div>
               <Slider
                 weatherData={weather}
                 date={dateBuilder(new Date())}
