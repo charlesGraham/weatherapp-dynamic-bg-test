@@ -35,7 +35,11 @@ function Slider(props) {
               <div className="location">
                 {city}, {country}
               </div>
+<<<<<<< HEAD
               <div className="date">{times[0]}</div>
+=======
+              <div className="date">{props.date}</div>
+>>>>>>> master
             </div>
 
             <div className="weather-box">
@@ -51,7 +55,11 @@ function Slider(props) {
               <div className="location">
                 {city}, {country}
               </div>
+<<<<<<< HEAD
               <div className="date">{times[1]}</div>
+=======
+              <div className="date">{props.date}</div>
+>>>>>>> master
             </div>
 
             <div className="weather-box">
@@ -66,7 +74,11 @@ function Slider(props) {
             <div className="location">
               {city}, {country}
             </div>
+<<<<<<< HEAD
             <div className="date">{times[2]}</div>
+=======
+            <div className="date">{props.date}</div>
+>>>>>>> master
           </div>
 
           <div className="weather-box">
@@ -80,7 +92,11 @@ function Slider(props) {
             <div className="location">
               {city}, {country}
             </div>
+<<<<<<< HEAD
             <div className="date">{times[3]}</div>
+=======
+            <div className="date">{props.date}</div>
+>>>>>>> master
           </div>
 
           <div className="weather-box">
@@ -94,7 +110,11 @@ function Slider(props) {
             <div className="location">
               {city}, {country}
             </div>
+<<<<<<< HEAD
             <div className="date">{times[4]}</div>
+=======
+            <div className="date">{props.date}</div>
+>>>>>>> master
           </div>
 
           <div className="weather-box">

@@ -1,7 +1,10 @@
 {
   "name": "weatherapptest-familyproudmaster",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
+=======
+>>>>>>> master
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -25,5 +28,12 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
+<<<<<<< HEAD
   ]
+=======
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+>>>>>>> master
 }

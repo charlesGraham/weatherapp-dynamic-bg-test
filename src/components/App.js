@@ -74,7 +74,7 @@ function App() {
                   : weather.list[0].weather[0].main === "Clear"
                     ? "app sunny"
                       : "app"
-        : "app hank"
+        : "app"
       }
     >
       <main>
