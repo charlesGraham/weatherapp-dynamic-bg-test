@@ -35,7 +35,7 @@ function Slider(props) {
               <div className="location">
                 {city}, {country}
               </div>
-              <div className="date">{times[0]}</div>
+              <div className="date">{props.date}</div>
             </div>
 
             <div className="weather-box">
@@ -51,7 +51,7 @@ function Slider(props) {
               <div className="location">
                 {city}, {country}
               </div>
-              <div className="date">{times[1]}</div>
+              <div className="date">{props.date}</div>
             </div>
 
             <div className="weather-box">
@@ -66,7 +66,7 @@ function Slider(props) {
             <div className="location">
               {city}, {country}
             </div>
-            <div className="date">{times[2]}</div>
+            <div className="date">{props.date}</div>
           </div>
 
           <div className="weather-box">
