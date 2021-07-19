@@ -49,8 +49,8 @@ body {
   transition: 0.4 ease-out;
 }
 
-.app.hank {
-  background-image: url('./assets/hank.png');
+.app.error {
+  background-image: url('./assets/error.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
